@@ -1,0 +1,184 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprenda HTML | Guia Básico</title>
+        <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+
+        
+    </head>
+    <body>
+        <header>
+            <h1>Aprenda HTML</h1>
+            <p>Um guia básico para entender a estrutura das páginas web.</p>
+            <nav>
+                <a href="#inicio">Início</a> |
+                <a href="#estrutura">Estrutura</a> |
+                <a href="#tags">Principais tags</a> |
+                <a href="#exemplos">Exemplos</a> |
+                <a href="#referencia">Referência</a>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+
+            <img src="html.png" alt="Imagem" width="600">
+            <section id="inicio">
+                <h2>O que é HTML?</h2>
+                <p><strong>HTML</strong> significa <em>HyperText Markup Language</em> (Linguagem de Marcação de Hipertexto). É utilizada para estruturar o conteúdo de páginas da internet.</p>
+                <p>Com HTML, definimos títulos, parágrafos, imagens, links, listas, tabelas e outros elementos. Ele não é uma linguagem de programação, mas uma linguagem de marcação.</p>
+            </section>
+
+            <hr>
+
+            <section id="estrutura">
+                <h2>Estrutura Básica de um Documento HTML</h2>
+                <p>Todo documento HTML segue uma estrutura básica:</p>
+
+                <!--Trecho de código pre-formatado-->
+                <pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-BR"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Minha página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+        &lt;p&gt;Minha primeira página HTML.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: informa ao navegador que o documento utiliza HTML5.</li>
+                    <li><code>&lt;html&gt;</code>: elemento raiz da página.</li>
+                    <li><code>&lt;head&gt;</code>: contém informações sobre o documento.</li>
+                    <li><code>&lt;title&gt;</code>: define o título exibido na aba do navegador.</li>
+                    <li><code>&lt;body&gt;</code>: contém o conteúdo visível da página.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="tags">
+                <h2>Principais Tags HTML</h2>
+                <p>As tags são elementos utilizados para identificar e organizar os diferentes tipos de conteúdo.</p>
+
+                <h3>1. Títulos e textos</h3>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>: títulos e subtítulos.</li>
+                    <li><code>&lt;p&gt;</code>: parágrafo.</li>
+                    <li><code>&lt;strong&gt;</code>: dá importância ao texto (geralmente em negrito).</li>
+                    <li><code>&lt;em&gt;</code>: dá ênfase ao texto (geralmente em itálico).</li>
+                    <li><code>&lt;br&gt;</code>: quebra de linha.</li>
+                    <li><code>&lt;hr&gt;</code>: separação temática, geralmente exibida como uma linha.</li>
+                </ul>
+
+                <h3>2. Links e imagens</h3>
+                <ul>
+                    <li><code>&lt;a&gt;</code>: cria links para outras páginas ou seções.</li>
+                    <li><code>&lt;img&gt;</code>: exibe imagens.</li>
+                </ul>
+                <p>Exemplo de link: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Documentação HTML da MDN.</a></p>
+
+                <h3>3. Listas</h3>
+                <p>Lista Não Ordenada:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>Lista Ordenada:</p>
+                <ol>
+                    <li>Planejar a estrutura.</li>
+                    <li>Escrever o HTML.</li>
+                    <li>Testar no navegador.</li>
+                </ol>
+
+                <h3>4. Organização semântica</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: cabeçalho.</li>
+                    <li><code>&lt;nav&gt;</code>: área de navegação.</li>
+                    <li><code>&lt;main&gt;</code>: conteúdo principal.</li>
+                    <li><code>&lt;section&gt;</code>: seção temática.</li>
+                    <li><code>&lt;article&gt;</code>: conteúdo independente.</li>
+                    <li><code>&lt;footer&gt;</code>: rodapé.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="exemplos">
+                <h2>Exemplos Práticos</h2>
+
+                <h3>Exemplo de título e parágrafo</h3>
+                <pre><code>&lt;h1&gt;Meu primeiro site&lt;/h1&gt;
+    &lt;p&gt;Estou aprendendo HTML!&lt;/p&gt;</code></pre>
+
+                <h3>Exemplo de imagem</h3>
+                <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+                <p>O atributo <code>src</code> indica o caminho da imagem e <code>alt</code> fornece uma descrição textual.</p>
+
+                <h3>Exemplo de link</h3>
+                <pre><code>&lt;a href="https://www.google.com" target="_blank" rel="noopener noreferrer"&gt;Acessar o Google&lt;/a&gt;</code></pre>
+                <ul>
+                    <li>target="_blank" → Abre em nova guia.</li>
+                    <li>rel="noopener" → Impede acesso à página original.</li>
+                    <li>rel="noreferrer → Não informa a origem da navegação.</li>
+                </ul>
+
+                <h3>Exemplo de lista</h3>
+                <pre><code>&lt;ul&gt;
+        &lt;li&gt;Primeiro item&lt;/li&gt;
+        &lt;li&gt;Segundo item&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+            </section>
+
+            <hr>
+
+            <section id="referencia">
+                <h2>Tabela de Referência Rápida</h2>
+                <table border="1">
+                    <thead>
+                        <tr align="center">
+                            <th>Tag</th>
+                            <th>Função</th>
+                            <th>Exemplo de Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr><td><code>&lt;h1&gt;</code></td><td>Título principal</td><td>Nome da página</td></tr>
+                        <tr><td><code>&lt;p&gt;</code></td><td>Parágrafo</td><td>Texto explicativo</td></tr>
+                        <tr><td><code>&lt;a&gt;</code></td><td>Link</td><td>Link para outro site</td></tr>
+                        <tr><td><code>&lt;img&gt;</code></td><td>Imagem</td><td>Foto ou ilustração</td></tr>
+                        <tr><td><code>&lt;ul&gt;</code></td><td>Lista não ordenada</td><td>Lista com marcadores</td></tr>
+                        <tr><td><code>&lt;ol&gt;</code></td><td>Lista ordenada</td><td>Passos numerados</td></tr>
+                        <tr><td><code>&lt;table&gt;</code></td><td>Tabela</td><td>Dados organizados em linhas e colunas</td></tr>
+                        <tr><td><code>&lt;footer&gt;</code></td><td>Rodapé</td><td>Informações finais</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Onde aprender mais?</h2>
+                <p>Consulte algumas vídeos aulas do Youtube para aprofundar seus conhecimentos:</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=sj0p9O85AIg&list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A" target="_blank" rel="noopener noreferrer">Programação Web — HTML</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="noopener noreferrer">Curso em Vídeo HTML5 e CSS - Gustavo Guanabara</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank" rel="noopener noreferrer">Curso de HTML e CSS - Ótavio Miranda</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>Site desenvolvido para apresentar no curso de Java SENAI.</p>
+            <p>© 2026 — Guia Básico de HTML</p>
+            <p><a href="#inicio">Voltar ao início ↑</a></p>
+        </footer>
+    </body>
+    </html>
