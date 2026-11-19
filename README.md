@@ -1,5 +1,5 @@
 # Aprenda HTML
-Um guia básico para entender a estrutura das páginas web.\
+Um guia básico para entender a estrutura das páginas web.
 
 Site didático sobre a linguagem HTML, com uma estrutura simples, organizada e utilizando os próprios elementos nativos do HTML.
 1. Estrutura do site
